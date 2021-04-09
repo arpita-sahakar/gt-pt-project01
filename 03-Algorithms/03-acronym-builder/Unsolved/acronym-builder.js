@@ -5,8 +5,9 @@
 var acronymBuilder = (str) => {
     let splitString = str.split(" ");
     let acronym = "";
+
     for (i=0; i<splitString.length; i++){
-        acronym = acronym + splitString[i][0];
+        acronym = acronym + splitString[i][0].toUpperCase();
         // acronym = acronym + splitString[i].slice(0,1);
     }
     console.log(acronym);
